@@ -1,10 +1,10 @@
 on:
   schedule:
-    - cron : '*/0.5 * * * *'
+    - cron : '*/1 * * * *'
 
 jobs:
   hello_world:
     runs-on: ubuntu-latest
     steps:
       - name: echo current time
-        run: "the current time is ${date}"
+        run: echo "the current time is ${date}"
