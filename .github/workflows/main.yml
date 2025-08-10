@@ -1,1 +1,10 @@
-this is a demo yml file with no content
+on:
+  schedule:
+    - cron : '*/0.5 * * * *'
+
+jobs:
+  hello_world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo current time
+        run: "the current time is ${date}"
