@@ -3,7 +3,7 @@ on:
     branches:
       - main
       - dev
-  pull_request:wq!:
+  pull_request:
     branches:
       - main
   
