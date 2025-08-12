@@ -3,9 +3,9 @@ on:
     branches:
       - main
       - dev
-    pull_requests:
-      branches:
-        - main
+  pull_request:wq!:
+    branches:
+      - main
   
 
   jobs:
