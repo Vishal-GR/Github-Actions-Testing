@@ -12,7 +12,7 @@ on:
                 type: string
             data:
                 description: "base64 encoded of the file"
-                required: true
+                required: false
                 type: string
 jobs:
     greet:
