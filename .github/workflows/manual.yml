@@ -20,11 +20,11 @@ jobs:
         steps:
             - name: Decoded file content
               run: |
-                echo "${{inputs.data}} | base64 --decode > ./decoded_file.txt"
+                echo "${{inputs.data}} | base64 --decode > decoded_file.txt"
             - name: Display_Greeting
               run: |
                 echo "${{inputs.greeting}} , ${{inputs.name}}"
             - name: Display_File Content
               run: |
                 echo "Content of the file: "
-                cat ./decoded_file.txt
+                cat decoded_file.txt
