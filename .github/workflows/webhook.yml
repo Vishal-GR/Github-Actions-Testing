@@ -2,7 +2,7 @@ name: 'Webhook example'
 on:
     repository_dispatch:
         types:
-            - custom_webhook
+            - webhook
 
 jobs:
     respond_to_dispatch:
