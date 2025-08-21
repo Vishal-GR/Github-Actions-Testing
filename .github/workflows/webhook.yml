@@ -1,15 +1,15 @@
 name: 'Webhook example'
 on:
-    repository_dispatch:
-        types:
-            - webhook
+  repository_dispatch:
+      types:
+          - webhook
 
 jobs:
     respond_to_dispatch:
         runs-on: ubuntu-latest
         steps:
             - name: checkout repo
-              uses: actions/checkout@v2
+              uses: actions/checkout@v4
             - name: run a script
               run: | 
                     echo "Event of type: $GITHUB_EVENT_NAME"
